@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Declare variables */
+
+:root {
+    --text: white;
+    --font: "Goudy Bookletter 1911", sans-serif;
+    --bold: bold;
+    --border: 1.5px solid black;
+    --border2: 1.5px solid white;
+    --border3: 3px solid white;
+    --buttonborder: 2px solid white;
+    --bg1: rgba(19, 19, 19, 0.76);
+    --bg2: #3e4657;
+    --bg3: rgba(0, 0, 0, 0.753);
+    --silver: #0f0f0f;
+    --silverop: #0f0f0fbe;
+    --mrg: 30px;
+}
+
+/* Element Selectors */
+
+body {
+    background-color: var(--text);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg1);
+    height: 50px;
+}
+
+nav,
+li,
+ul {
+    display: inline;
+    list-style-type: none;
+}
+
+ul {
+    margin-right: 20px;
+}
+
+li {
+    margin: 5px;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: var(--text);
+    font: var(--font);
+    font-weight: var(--bold);
+}
+
+li,
+button {
+    color: var(--text);
+    font: var(--font);
+}
+
+/* Class Selectors */
+
+.headerwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 var(--mrg);
+}
+
+.mainwrapper {
+    display: flex;
+    flex-direction: row wrap;
+    width: 100%;
+    height: 600px;
+}
+
+.aboutwrapper {
+    flex: 1 50%;
+    border: var(--border);
+}
+
+.floatleftbackground {
+    flex: 1 50%;
+}
+
+.colorwrapper {
+    display: flex;
+    flex-direction: row wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.color0 {
+    width: 33.3%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.color1 {
+    width: 33.3%;
+    height: 100%;
+    background-color: orange;
+}
+
+.color2 {
+    width: 33.3%;
+    height: 100%;
+    background-color: red;
+}
