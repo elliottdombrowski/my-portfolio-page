@@ -1,104 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>my portfolio page.</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
-      <header>
-          <div class="headerwrapper">
-              <div class="headertext">
-                  <h1>elliott dombrowski.</h1>
-              </div>
+    <!--Header bar -->
+    <header>
+      <div class="headername">
+        <h1>elliott dombrowski</h1>
+      </div>
 
-        <!-- Navbar -->
-            <div class="navwrapper">
-                <nav>
-                    <ul>
-                        <a href="#"><li>about.</li></a>
-                        <a href="#"><li>contact.</li></a>
-                        <a href="#"><li>resume.</li></a>
-                    </ul>
+      <nav>
+        <ul>
+          <li class="navlink" id="navlink">about</li>
+          <li class="navlink" id="navlink">work</li>
+          <li class="navlink" id="navlink">resume</li>
+        </ul>
+      </nav>
 
-        <!-- Contact Button -->
-                    <button>
-                        contact me.
-                    </button>
-                </nav>
+      <div class="aboutme">
+        <button class="aboutbutton">about me</button>
+      </div>
+    </header>
+
+    <!-- Main Body -->
+    <main>
+        <!-- Left Graphic Wrapper -->
+        <div class="graphicwrapper">
+            <div class="outer1 outer">
+                <div class="inner"></div>
             </div>
-          </div>
-      </header>
+            <div class="outer2 outer">
+                <div class="inner"></div>
 
-      <!-- Main Body Content -->
-      <main>
-
-        <!-- Decoration. -->
-        <div class="mainwrapper">
-            <div class="floatleftbackground">
-                <div class="colorwrapper">
-                    <div class="color0"></div>
-                    <div class="color1"></div>
-                    <div class="color2"></div>
-                </div>
+            <div class="aboutmetext">
+                <h2>about me</h2>
             </div>
 
-          <!-- About Content -->
-            <div class="aboutwrapper">
-                <div class="aboutheader">
-                    <h1>about me.</h1>
-                </div>
-
-                <div class="aboutcontent">
-                    <p>fillerfillerfillerfillerfillerfillerfiller</p>
-                </div>
+            </div>
+            <div class="outer3 outer">
+                <div class="inner "></div>
+            </div>
+            <div class="outer4 outer">
+                <div class="inner"></div>
             </div>
         </div>
 
-        <!-- Work Body Content -->
-          <div class="workwrapper">
-              <div class="workheader">
-                <div class="workmain"></div>
-                <div class="workcontainer">
-                    <div class="workitem"></div>
-                    <div class="workitem"></div>
-                    <div class="workitem"></div>
-                    <div class="workitem"></div>
-                </div>
-              </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="formwrapper">
-              <div class="formcontainer">
-                  <form action="#">
-                      <label for="contact">contact me.</label><br>
-                      <input type="text" id="contact" placeholder="name."><br>
-                      <input type="text" placeholder="email."><br>
-                      <input type="text" class="message" placeholder="leave a message.">
-                  </form>
-              </div>
-          </div>
-
-          <!-- Footer Content -->
-          <footer>
-              <div class="medialinks">
-                  <a href="#"><img src="#"></a>
-                  <a href="#"><img src="#"></a>
-                  <a href="#"><img src="#"></a>
-                  <a href="#"><img src="#"></a>
-              </div>
-
-              <div class="thankstext">
-                  <h3>thanks for visiting.</h3>
-                  <a href="#"><img src="#"></a>
-              </div>
-          </footer>
-      </main>
-      <script src="assets/js/script.js"></script>
+        <!-- Right About Wrapper -->
+        <div class="aboutwrapper">
+            <div class="bio">
+                <!-- append and fade in text w/ javascript -->
+                <p id="biotext"></p>
+            </div>
+        </div>
+    </main>
   </body>
 </html>
