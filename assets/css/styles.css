@@ -1,121 +1,38 @@
-/* Wildcard Selectors */
-
-/* Declare Variables */
+/* VARIABLES */
 :root {
-    --mrg: 30px;
     --text: white;
-    --bg1: red;
-    --bg2: blue;
-    --bg3: yellow;
-    --bg4: orange;
-    --bg5: aquamarine;
 }
 
-/* Element Selectors */
-body {
-    background-color: aquamarine;
+/* WILDCARD */
+* {
+    color: var(--text);
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-    background: black;
+/* ELEMENT SELECTORS */
+html {
+    scroll-behavior: smooth;
+    background-color: black;
 }
 
 h1 {
+    font-size: 350%;
     color: var(--text);
 }
 
 ul,
 li {
-    list-style-type: none;
     display: inline;
-    padding: 0;
-    text-align: center;
+    list-style-type: none;
     color: var(--text);
 }
 
+/* CLASS SELECTORS */
 main {
     display: flex;
-    flex-direction: row;
-}
-
-/* Class Selectors */
-.headername,
-.aboutme {
-    width: 150px;
-}
-.graphicwrapper {
-    overflow: hidden;
-    display: flex;
-    flex-wrap:wrap;
-    align-content: center;
-    align-items: center;
-    width: 50%;
-    height: 600px;
-    background-color: black;
-}
-
-.graphicwrapper > div {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    transform: rotate(20deg) scale(1.2);
-    margin-bottom: 25px;
-    width: 100%;
-    height: 100px;
-}
-
-.inner {
-    width: 80%;
-    height: 30%;
-    border-radius: 0 50px 50px 0;
-    background-color: var(--text);
-}
-
-.aboutmetext {
-    position: absolute;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--text);
-    text-align: center;
-    transform: rotate(-20deg);
-    height: 50px;
-    width: 100px;
-    right: 10%;
 }
+/* BUTTON EFFECTS */
 
-.outer1 {
-    background-color: var(--bg1);
-}
-
-.outer2 {
-    background-color: var(--bg2);
-}
-
-.outer3 {
-    background-color: var(--bg3);
-}
-
-.outer4 {
-    background-color: var(--bg4);
-}
-
-.inner1 {
-    width: 80%;
-    height: 60px;
-    background-color: var(--white);
-}
-
-.aboutwrapper {
-    width: 50%;
-    height: 600px;
-    background-color: black;
-}
-
-/* Media Queries */
+/* MEDIA QUERIES */
