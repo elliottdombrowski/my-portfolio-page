@@ -9,6 +9,7 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <!-- RESET CSS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
@@ -20,34 +21,70 @@
     <!-- HEADER -->
     <header class="header-section">
       <nav class="nav-bar-left">
-        <i class="fas fa-globe fa-2x"></i>
+        <a href="#"><i class="far fa-bell fa-2x"></i></a>
         <div class="media-links">
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fab fa-twitter fa-2x"></i>
-          <i class="fab fa-linkedin-in fa-2x"></i>
-          <i class="fab fa-facebook-f fa-2x"></i>
+          <a class="nav-links" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a class="nav-links" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a class="nav-links" href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a class="nav-links" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
         </div>
       </nav>
 
       <!-- NAVBAR -->
       <nav class="nav-bar-right">
         <ul class="list-right">
-          <li class="nav-item nav-1" id="navbar-item">about</li>
-          <li class="nav-item nav-2" id="navbar-item">work</li>
-          <li class="nav-item nav-3" id="navbar-item">contact</li>
+          <li class="nav-item nav-1" id="navbar-item"><a href="#about-section-jump" id="about-button-nav">about</a></li>
+          <li class="nav-item nav-2" id="navbar-item"><a href="#work-section-jump" id="work-button">work</a></li>
+          <li class="nav-item nav-3" id="navbar-item"><a href="#" id="contact-button">contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main-body-content" id="main-body">
       <div class="header-wrapper" id="header">
-        <h1 class="name-text" id="header-text">elliott dombrowski</h1>
+        <h1 class="name-text1 name-text" id="header-text">elliott dombrowski</h1>
+        <h1 class="name-text2 name-text" id="header-text">elliott dombrowski</h1>
+        <h1 class="name-text3 name-text" id="header-text">elliott dombrowski</h1>
+        <h1 class="name-text4 name-text" id="header-text">elliott dombrowski</h1>
+        <h1 class="name-text5" id="header-text">elliott dombrowski</h1>
+      </div>
+      <div class="arrow-down">
+        <a href="#about-section-jump" id="about-jump"><i class="fas fa-sort-down fa-3x" id="about-button"></i></a>
       </div>
     </main>
 
+    <a id="about-section-jump"></a>
+    <section class="about-section" id="about">
+      <div class="about-container container-1" id="about-one"></div>
+      <div class="about-container container-2" id="about-two"></div>
+      <div class="about-container container-3" id="about-three"></div>
+    </section>
+
+    <a id="work-section-jump"></a>
+    <section class="work-section" id="work">
+      <div class="work-wrapper">
+        <div class="main-work">
+
+        </div>
+
+        <div class="other-work">
+          <div class="work"></div>
+          <div class="work"></div>
+          <div class="work"></div>
+          <div class="work"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="form-wrapper">
+        <label for=""></label>
+      </div>
+    </section>
     <!-- LINKING JS, JQUERY, MOMENT -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js%22%3E"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js%22%3E"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/52d65b95b5.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
   </body>
