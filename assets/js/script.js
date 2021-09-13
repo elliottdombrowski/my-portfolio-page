@@ -1,38 +1,39 @@
-var aboutSection = $("#about");
-var workSection = $("#work");
+var aboutSection = $("#about-page");
+var aboutCont = $(".about-container");
+var homeSection = $("#home-page");
+var workSection = $("#work-page");
+var contactSection = $("#contact-page");
 var aboutNav = $("#about-button-nav");
 var workNav = $("#work-button");
 var contactNav = $("#contact-button");
-var downButton = $("#about-jump");
+var downButton = $("#about-button");
+var aboutDown = $("#about-down");
 var bell = $("#bell");
 var media = $("#media-display");
-var bell2 = $("#trymediatwo");
 
 
-//Adds event listeners for nav buttons
-downButton.on("click", showAboutAlt);
-aboutNav.on("click", showAbout);
-workNav.on("click", showWork);
-// bell.on("click", showMedia);
+//Adds event listeners for buttons
 
+//fades in/out hidden media link nav bar
 bell.first().click(function() {
     media.first().fadeToggle(2000, "linear");
 });
 
-//On respective button click, sets visibility for respective section.
-function showAbout() {
-    aboutSection.css("display", "flex");
-}
+//fades out main page to about page
+downButton.click(function() {
+    homeSection.fadeOut(2000);
+    //waits until home page animation is finished to start about page animation
+    homeSection.promise().done(function(){
+        aboutSection.fadeIn(2000);
+    });
+});
 
-function showAboutAlt() {
-    aboutSection.css("display", "flex");
-}
+//fades out 
 
-function showWork() {
-    aboutSection.css("display", "flex");
-    workSection.css("display", "flex");
-}
-
-// function showMedia () {
-//     // media.css("display", "block");
-// }
+//flashing effect on about page down btn
+$(document).ready(() => {
+    setInterval(() => {
+        aboutDown.fadeIn("slow", "linear");
+        aboutDown.fadeOut("slow", "linear");
+    }, 3000);
+});
