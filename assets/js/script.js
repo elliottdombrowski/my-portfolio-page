@@ -1,6 +1,5 @@
 var aboutCont = $(".about-container");
 var aboutNav = $("#about-button-nav");
-var contactNav = $("#contact-button");
 var media = $("#media-display");
 
 var pages = [
@@ -35,6 +34,15 @@ workNav.click(function() {
     //waits until cur page animation is finished
     aboutSection.promise().done(function() {
         workSection.fadeIn(2000);
+    });
+});
+
+//fades out page to contact page
+var contactNav = $("#contact-button");
+contactNav.click(function() {
+    workSection.fadeOut(2000);
+    workSection.promise().done(function() {
+        contactSection.fadeIn(2000);
     });
 });
 
