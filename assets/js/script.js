@@ -17,16 +17,16 @@ bell.first().click(function() {
     media.first().fadeToggle(1000, "linear");
 });
 
-//fades out main page to about page
-// var downButton = $("#about-button");
-// downButton.click(function() {
-//     pages[currIndex].fadeOut(2000);
-//     //waits until home page animation is finished to start about page animation
-//     pages[currIndex].promise().done(function(){
-//         aboutSection.fadeIn(2000);
-//         currIndex = 1;
-//     });
-// });
+// fades out main page to about page
+var downButton = $("#about-button");
+downButton.click(function() {
+    pages[currIndex].fadeOut(2000);
+    //waits until home page animation is finished to start about page animation
+    pages[currIndex].promise().done(function(){
+        aboutSection.fadeIn(2000);
+        currIndex = 1;
+    });
+});
 
 function toSection(index) {
     pages[currIndex].fadeOut(2000);
@@ -54,29 +54,29 @@ contactNav.click(function() {
 });
 
 //slideshow function
-var downButton = $("#about-button");
-var timer = 10;
-// downButton.click(setInterval(function() {
-//     timer--;
-//     console.log(timer);
+// var downButton = $("#about-button");
+// var timer = 10;
+// // downButton.click(setInterval(function() {
+// //     timer--;
+// //     console.log(timer);
 
-//     if (timer === 0) {
-//         clearInterval();
-//     }
-// }, 1000));
-downButton.click(slideShow())
+// //     if (timer === 0) {
+// //         clearInterval();
+// //     }
+// // }, 1000));
+// downButton.click(slideShow())
 
-function slideShow() {
-    setInterval(function() {
-        timer--;
-        console.log(timer);
+// function slideShow() {
+//     setInterval(function() {
+//         timer--;
+//         console.log(timer);
 
-        if (timer >= 0) {
-            clearInterval();
-            console.log("timer done");
-        }
-    }, 1000);
-}
+//         if (timer >= 0) {
+//             clearInterval();
+//             console.log("timer done");
+//         }
+//     }, 1000);
+// }
 
 //flashing effect on about page down 
 var aboutDown = $("#about-down");
