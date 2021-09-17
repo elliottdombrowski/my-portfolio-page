@@ -16,13 +16,13 @@
 /* WILDCARD */
 * {
     color: var(--text);
-    background: var(--background);
 }
 
 /* ELEMENT SELECTORS */
 a {
     height: 100%;
     width: 100%;
+    color: white;
     text-decoration: none;
 }
 
@@ -31,6 +31,7 @@ html {
 }
 
 body {
+    background-color: var(--background);
     position: relative;
     max-width: 100vw;
     max-height: 100vh;
@@ -47,7 +48,8 @@ main {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--font);
     font-size: 350%;
     letter-spacing: .5rem;
@@ -62,13 +64,12 @@ li {
     font-size: 130%;
 }
 
-/* CLASS SELECTORS */
+/* img {
+    width: 100%;
+    height: auto;
+} */
 
-.work,
-.about,
-.contact {
-    display: none;
-}
+/* CLASS SELECTORS */
 
 .header-section {
     position: absolute;
@@ -186,6 +187,7 @@ li {
 .work,
 .contact,
 .about {
+    display: none;
     height: 100vh;
     width: 100vw;
     max-height: 100vh;
@@ -194,7 +196,8 @@ li {
 }
 
 .about {
-    background: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(12,24,48,1) 90%);
 }
 
 .about-header-container {
@@ -203,9 +206,98 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    top: 20%;
+    top: 15%;
     height: 80px;
     padding: 0 4%;
+}
+
+.about-bio-wrapper {
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+    height: 50%;
+    width: 43%;
+    background: transparent;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.about-bio-wrapper-right {
+    bottom: 8%;
+    right: 5%;
+    left: auto;
+    height: 45%;
+    width: 38%;
+
+    animation-delay: 2s;
+}
+
+.about-bio-header-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 90%;
+    background: grey;
+    z-index: 1;
+}
+
+.about-bio-header-wrapper-right {
+    left: 0;
+    right: auto;
+    height: 55px;
+}
+
+.about-bio-header {
+    font-size: 200%;
+    background: transparent;
+}
+
+.about-bio-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90%;
+    width: 90%;
+    background: white;
+}
+
+.about-bio-container-right {
+    right: 0;
+    left: auto;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.carousel-indicators {
+    position: static;
+    background: var(--background);
+    border-radius: 50px;
+    width: 200px;
 }
 
 /* ANIMATIONS */

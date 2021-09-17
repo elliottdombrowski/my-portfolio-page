@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>my portfolio page.</title>
 
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,10 +63,33 @@
         <h2 class="about-me-header">
           here's a little bit about me...
         </h2>
-        <i class="far fa-arrow-alt-circle-down fa-3x link-hover about-down-display" id="about-down"></i>
+        <i class="far fa-arrow-alt-circle-down fa-3x about-down-display" id="about-down"></i>
       </div>
+
+      <div class="about-bio-wrapper">
+        <div class="about-bio-header-wrapper">
+          <h3 class="about-bio-header">
+            about me test
+          </h3>
+        </div>
+        <div class="about-bio-container" id="about-bio">
+        </div>
       <div class="about-content-container">
         
+      </div>
+      </div>
+
+      <div class="about-bio-wrapper about-bio-wrapper-right">
+        <div class="about-bio-header-wrapper about-bio-header-wrapper-right">
+          <h3 class="about-bio-header">
+            about me test
+          </h3>
+        </div>
+        <div class="about-bio-container about-bio-container-right" id="about-bio">
+        </div>
+      <div class="about-content-container">
+        
+      </div>
       </div>
 
       <div class="stripes-container" id="stripes">
@@ -75,28 +101,45 @@
 
       <section class="work" id="work-page">
         <div class="work-wrapper">
-          <div class="main-work">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/imgs/swept_screenshot.png" class="d-block w-100" alt="screenshot of SWEPT">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/imgs/weather_screenshot.png" class="d-block w-100" alt="screenshot of Weather Dashboard">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/imgs/quiz_screenshot.png" class="d-block w-100" alt="screenshot of Javascript Coding Quiz">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
 
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            </div>
           </div>
-
-          <div class="other-work">
-            <div class="work"></div>
-            <div class="work"></div>
-            <div class="work"></div>
-            <div class="work"></div>
-          </div>
-        </div>
       </section>
-    </section>
 
-    <section class="contact-section" id="contact-page">
+    <section class="contact" id="contact-page">
       <div class="form-wrapper">
         <label for=""></label>
       </div>
     </section>
-    <!-- LINKING JS, JQUERY, MOMENT -->
+    <!-- LINKING JS, JQUERY, BOOTSTRAP, MOMENT -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js%22%3E"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js%22%3E"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/52d65b95b5.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
