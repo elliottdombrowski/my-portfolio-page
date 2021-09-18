@@ -15,6 +15,7 @@ var currIndex = 0;
 var bell = $("#bell");
 bell.first().click(function() {
     media.first().fadeToggle(1000, "linear");
+    media.css("display", "flex");
 });
 
 // fades out main page to about page
@@ -85,3 +86,8 @@ $(document).ready(() => {
         aboutDown.fadeOut("slow", "linear");
     }, 3000);
 });
+
+// (function hideHamburger() {
+//     var burger = $("#mobile-hamburger");
+//     burger.css("display", "none");
+// })
