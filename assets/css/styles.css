@@ -314,7 +314,7 @@ li {
     width: 350px;
     padding: 5px 10px;
     font-family: var(--font);
-    font-size: 110%;
+    font-size: 130%;
     text-align: center;
     line-height: 1.2;
     border-radius: 20px 0 0 20px;
@@ -385,8 +385,12 @@ li {
 }
 
 /* ANIMATIONS */
+.link-hover {
+    transition: 150ms ease-in-out;
+}
 
-.link-hover:hover {
+.link-hover:hover,
+.link-hover:active {
     color: var(--fade-two);
 }
   

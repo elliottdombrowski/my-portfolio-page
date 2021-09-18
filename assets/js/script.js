@@ -39,44 +39,43 @@ function toSection(index) {
 var aboutNav = $("#about-button-nav");
 aboutNav.click(function() {
     toSection(1);
+    clearInterval(interval)
 });
 
 //fades out page to work page
 var workNav = $("#work-button");
 workNav.click(function() {
     toSection(2);
+    clearInterval(interval)
 });
 
 //fades out page to contact page
 var contactNav = $("#contact-button");
 contactNav.click(function() {
     toSection(3);
+    clearInterval(interval)
 });
 
 //slideshow function
-// var downButton = $("#about-button");
-// var timer = 10;
-// // downButton.click(setInterval(function() {
-// //     timer--;
-// //     console.log(timer);
+var downButton = $("#about-button");
+var interval;
+var timer = 35;
+downButton.on("click", function() {
+    interval = setInterval(slideShow, 1000);
+});
 
-// //     if (timer === 0) {
-// //         clearInterval();
-// //     }
-// // }, 1000));
-// downButton.click(slideShow())
-
-// function slideShow() {
-//     setInterval(function() {
-//         timer--;
-//         console.log(timer);
-
-//         if (timer >= 0) {
-//             clearInterval();
-//             console.log("timer done");
-//         }
-//     }, 1000);
-// }
+function slideShow() {
+    timer--;
+    if (timer <= 0) {
+        clearInterval(interval);
+    } else if (timer === 35) {
+        toSection(1);
+    } else if (timer === 20) {
+        toSection(2);
+    } else if (timer === 5) {
+        toSection(3);
+    }
+}
 
 //flashing effect on about page down 
 var aboutDown = $("#about-down");
