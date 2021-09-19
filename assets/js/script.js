@@ -1,5 +1,6 @@
 var aboutCont = $(".about-container");
 var media = $("#media-display");
+var navLinks = $(".nav-link-button")
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -46,43 +47,14 @@ function toSection(index) {
   });
 }
 
-var aboutNav = $("#about-button-nav");
-aboutNav.click(function () {
-  toSection(1);
-  clearInterval(interval);
-});
-
-//fades out page to work page
-var workNav = $("#work-button");
-workNav.click(function () {
-  toSection(2);
-  clearInterval(interval);
-});
-
-//fades out page to contact page
-var contactNav = $("#contact-button");
-contactNav.click(function () {
-  toSection(3);
-  clearInterval(interval);
-});
-
-//BUTTON HANDLERS FOR MOBILE NAV
-var aboutMobile = $("#about-button-mobile");
-aboutMobile.click(function () {
-  toSection(1);
-  clearInterval(interval);
-});
-
-var workMobile = $("#about-button-mobile");
-workMobile.click(function () {
-  toSection(2);
-  clearInterval(interval);
-});
-
-var contactMobile = $("#contact-button-mobile");
-contactMobile.click(function () {
-  toSection(3);
-  clearInterval(interval);
+//grabbed all nav elements with nav-link-button class
+//.each loops through all + gets index of loop
+navLinks.each(function(i) {
+    //this refers to whichever index pos. is currenting being used??
+    $(this).click(function () {
+        toSection(i+1);
+        clearInterval(interval);
+      });
 });
 
 //slideshow function
