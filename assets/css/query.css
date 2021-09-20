@@ -220,4 +220,63 @@
     .about-bio-wrapper-right {
         bottom: 4%;
     }
+
+    .work-mobile-header {
+        left: 14px;
+        top: 11%;
+    }
+
+    .work-mobile {
+        margin-top: 230px;
+    }
+
+    .form-wrapper-inner {
+        width: 80%;
+    }
+
+    .contact-info-container {
+        margin-top: 10px;
+    }
+
+    .contact-info-wrapper {
+        margin-top: 15px;
+    }
+
+    .contact-header, .contact-label {
+        font-size: 150%;
+    }
+
+    .contact-form-header {
+        font-size: 120%;
+    }
+
+    .contact-info-list {
+        font-size: 95%;
+    }
+
+    .form-wrapper-container {
+        margin-top: 35%;
+    }
+
+    .others {
+        max-width: 100vw;
+        font-size: 70%;
+    }
+
+    .others-links {
+        width: 80%;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .others-links > ul {
+        margin: 0 5px;
+    }
+
+    .contributors {
+        font-size: 100%;
+        margin: 0 5px;;
+    }
+
+    
 }
