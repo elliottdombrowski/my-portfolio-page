@@ -51,7 +51,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-family: var(--font);
     font-size: 350%;
     letter-spacing: .5rem;
@@ -366,8 +367,20 @@ li {
     height: 100vh;
 }
 
-.form-wrapper-inner {
+.form-wrapper-inner,
+.contact-info-wrapper {
     width: 400px;
+}
+
+.contact-info-wrapper {
+    text-align: center;
+}
+
+.form-wrapper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .submit-button {
@@ -381,6 +394,10 @@ li {
 .contact-label {
     font-family: var(--font);
     font-size: 180%;
+    margin-top: 10px;
+}
+
+.contact-header-cont {
     margin-top: 50px;
 }
 
@@ -402,6 +419,17 @@ li {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.contact-info {
+    display: block;
+    margin: 3px 0;
+}
+
+.divider {
+    background: white;
+    width: 2px;
+    height: 100%;
 }
 
 .cont-1 {

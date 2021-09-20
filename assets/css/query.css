@@ -141,6 +141,27 @@
         width: 300px;
     }
 
+    .form-wrapper-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100vw;
+    }
+
+    .contact-info-container {
+        margin-top: 75px;
+        border: 1px solid white;
+        width: 80%;
+        padding-bottom: 10px;
+    }
+
     .others {
         width: 300px;
         font-size: 90%;
