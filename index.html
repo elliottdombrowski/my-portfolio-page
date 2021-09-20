@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- ANIMATION CSS -->
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="assets/css/query.css" />
   </head>
   <body>
     <header class="header-section">
@@ -42,13 +46,13 @@
       <nav class="navbar">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="link-hover nav-links nav-link-button" id="about-button-nav">about</a>
+            <a href="#" class="link-hover nav-bar-links nav-link-button" id="about-button-nav">about</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="link-hover nav-links nav-link-button" id="work-button">work</a>
+            <a href="#" class="link-hover nav-bar-links nav-link-button" id="work-button">work</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="link-hover nav-links nav-link-button" id="contact-button">contact</a>
+            <a href="#" class="link-hover nav-bar-links nav-link-button" id="contact-button">contact</a>
           </li>
         </ul>
       </nav>
@@ -116,20 +120,26 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank" class="work-link"><img src="assets/imgs/swept_screenshot.png" class="d-block w-100" alt="screenshot of SWEPT"></a>
+                  <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank" class="work-link">
+                    <img src="assets/imgs/swept_screenshot.png" class="d-block w-100" alt="screenshot of SWEPT">
+                  </a>
                     <p class="carousel-text">
                       SWEPT!!!<br>Built with JavaScript, HTML, CSS, Bootstrap, and Server-side APIs.
                     </p>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://elliottdombrowski.github.io/weather-dashboard-application/" target="_blank" class="work-link"><img src="assets/imgs/weather_screenshot.png" class="d-block w-100" alt="screenshot of Weather Dashboard"></a>
+                  <a href="https://elliottdombrowski.github.io/weather-dashboard-application/" target="_blank" class="work-link">
+                    <img src="assets/imgs/weather_screenshot.png" class="d-block w-100" alt="screenshot of Weather Dashboard">
+                  </a>
                     <p class="carousel-text">
                       Weather Dashboad<br>
                       Built with JavaScript, HTML, CSS, and Server-side APIs.
                     </p>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://elliottdombrowski.github.io/javascript-coding-quiz/" target="_blank" class="work-link"><img src="assets/imgs/quiz_screenshot.png" class="d-block w-100" alt="screenshot of Javascript Coding Quiz"></a>
+                  <a href="https://elliottdombrowski.github.io/javascript-coding-quiz/" target="_blank" class="work-link">
+                    <img src="assets/imgs/quiz_screenshot.png" class="d-block w-100" alt="screenshot of Javascript Coding Quiz">
+                  </a>
                     <p class="carousel-text">
                       Coding Quiz<br>
                       Built with JavaScript, HTML, and CSS.
@@ -151,6 +161,30 @@
               </div>
             </div>
           </div>
+
+          <!-- WORK LAYOUT FOR MOBILE -->
+          <h4 class="work-mobile-header">all work is built with HTML, CSS, JavaScript, and a handful of libraries and APIs.</h4>
+          <section class="work-mobile">
+            <div class="main-work">
+              <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank" class="work-link">
+                <img src="assets/imgs/swept_screenshot.png" class="work-mobile" alt="screenshot of SWEPT">
+              </a>
+            </div>
+
+            <div class="work-wrapper-mobile">
+              <div class="work-container">
+                <a href="https://elliottdombrowski.github.io/weather-dashboard-application/" target="_blank" class="work-link">
+                  <img src="assets/imgs/weather_screenshot.png" alt="screenshot of Weather Dashboard">
+                </a>
+              </div>
+              <div class="work-container">
+                <a href="https://elliottdombrowski.github.io/javascript-coding-quiz/" target="_blank" class="work-link">
+                  <img src="assets/imgs/quiz_screenshot.png" alt="screenshot of Javascript Coding Quiz">
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
 
     <section class="contact" id="contact-page">
@@ -162,7 +196,7 @@
         </div>
 
         <div class="others">
-          <h4 class="contact-header">check out other contributors.</h4>
+          <h5 class="contact-header">check out other contributors.</h5>
         </div>
         <div class="others-links">
           <ul>

@@ -12,14 +12,18 @@ var pages = [
 ];
 
 hamburger.addEventListener("click", mobileMenu);
+navLinks.on("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
 
-//Adds event listeners for buttons
-var currIndex = 0;
+// function hideBurger() {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+//     console.log("toggled");
+// }
 
 //fades in/out hidden media link nav bar
 var bell = $("#bell");
@@ -29,6 +33,7 @@ bell.first().click(function () {
 });
 
 // fades out main page to about page
+var currIndex = 0;
 var downButton = $("#about-button");
 downButton.click(function () {
   pages[currIndex].fadeOut(2000);

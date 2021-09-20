@@ -1,0 +1,47 @@
+/* ANIMATIONS */
+.link-hover {
+    transition: 150ms ease-in-out;
+}
+
+.link-hover:hover,
+.link-hover:active {
+    color: var(--fade-two);
+}
+
+.link-hover:active {
+    color: var(--text)!important;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInShadow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

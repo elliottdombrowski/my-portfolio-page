@@ -49,7 +49,9 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: var(--font);
     font-size: 350%;
     letter-spacing: .5rem;
@@ -57,6 +59,7 @@ h3 {
 
 ul,
 li {
+    display: inline;
     list-style: none;
     margin: 0 7px;
     padding: 0;
@@ -176,10 +179,11 @@ li {
 }
 
 .nav-item {
+    text-align: right;
     margin: 0 var(--margin) 0 2rem;
 }
 
-.nav-links{
+.nav-bar-links{
     font-size: 1.6rem;
     font-weight: 400;
     color: white;
@@ -348,6 +352,11 @@ li {
     background: rgba(0, 0, 0, 0.774);
 }
 
+.work-mobile,
+.work-mobile-header {
+    display: none;
+}
+
 .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -410,130 +419,3 @@ li {
 .cont-4 {
     animation-delay: 2500ms;
 }
-
-/* ANIMATIONS */
-.link-hover {
-    transition: 150ms ease-in-out;
-}
-
-.link-hover:hover,
-.link-hover:active {
-    color: var(--fade-two);
-}
-
-.link-hover:active {
-    color: var(--text)!important;
-}
-
-/* a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-} */
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInShadow {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes fadeInHeader {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/* MEDIA QUERIES */
-
-@media all and (max-width: 700px) {
-    h1 {
-        font-size: 250%;
-        text-align: center;
-    }
-
-    .media-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        left: 22px;
-        top: 70px;
-        margin: 0;
-    }
-
-    .nav-links {
-        margin: 5px 0;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .nav-bar-left {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-        margin: 0 var(--margin);
-    }
-
-    .nav-menu {
-        position: fixed;
-        right: -100%;
-        top: 5rem;
-        flex-direction: column;
-        width: 50%;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        right: 0;
-    }
-
-    /* .nav-item-mobile {
-        margin: 2.5rem 0;
-    } */
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-
-
