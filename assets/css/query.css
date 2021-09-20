@@ -1,4 +1,4 @@
-@media all and (max-width: 800px) {
+@media all and (max-width: 770px) {
     h1 {
         font-size: 250%;
         text-align: center;
@@ -175,5 +175,49 @@
 
     .others-links > ul {
         font-size: 80%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .nav-bar-links {
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (max-width: 290px) {
+    h1 {
+        font-size: 180%;
+    }
+
+    .nav-bar-left {
+        margin: 0 15px;
+    }
+
+    .nav-item {
+        padding: 0;
+    }
+
+    .about-me-header {
+        font-size: 125%;
+    }
+
+    .about-bio-header {
+        font-size: 100%;
+    }
+
+    .about-header-container {
+        align-items: start;
+    }
+
+    .about-down-display {
+        bottom: 60px;
+    }
+    
+    .about-bio-wrapper {
+        bottom: 34%;
+    }
+
+    .about-bio-wrapper-right {
+        bottom: 4%;
     }
 }

@@ -19,12 +19,6 @@ function mobileMenu() {
   navMenu.classList.toggle("active");
 }
 
-// function hideBurger() {
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-//     console.log("toggled");
-// }
-
 //fades in/out hidden media link nav bar
 var bell = $("#bell");
 bell.first().click(function () {
@@ -91,3 +85,38 @@ $(document).ready(() => {
     aboutDown.fadeOut("slow", "linear");
   }, 3000);
 });
+
+//Downsize media icons for small screens
+function navbarQuery(small) {
+  var navQuery = $(".query-listener");
+
+  if (small.matches) {
+    navQuery.removeClass("fa-2x");
+    navQuery.addClass("fa-lg");
+  } else if (medium.matches) {
+    navQuery.removeClass("fa-lg");
+    navQuery.addClass("fa-2x");
+  }
+}
+
+// function aboutQuery(tiny) {
+//   var aboutQuery = $(".about-query-listener");
+
+//   if (tiny.matches) {
+//     aboutQuery.removeClass("fa-3x");
+//     aboutQuery.addClass("fa-2x");
+//     console.log("query matches");
+//   } else if (small.matches) {
+//     aboutQuery.removeClass("fa-2x");
+//     aboutQuery.addClass("fa-3x");
+//   }
+// }
+
+//Media Query Listener
+var tiny = window.matchMedia("(max-width: 290px)");
+var small = window.matchMedia("(max-width: 360px)");
+var medium = window.matchMedia("(max-width: 770px)");
+navbarQuery(small);
+// tiny.addListener(aboutQuery);
+small.addListener(navbarQuery);
+medium.addListener(navbarQuery);
