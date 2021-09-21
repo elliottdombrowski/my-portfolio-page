@@ -115,7 +115,7 @@ function navbarQuery(small) {
 //Media Query Listener
 var tiny = window.matchMedia("(max-width: 290px)");
 var small = window.matchMedia("(max-width: 360px)");
-var medium = window.matchMedia("(max-width: 770px)");
+var medium = window.matchMedia("(max-width: 800px)");
 navbarQuery(small);
 // tiny.addListener(aboutQuery);
 small.addListener(navbarQuery);

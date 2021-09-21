@@ -16,6 +16,7 @@
 /* WILDCARD */
 * {
     color: var(--text);
+    cursor: default;
 }
 
 /* ELEMENT SELECTORS */
@@ -197,6 +198,14 @@ li {
     flex-direction: row;
     width: 300px;   
     margin-left: var(--margin);
+}
+
+.fa-bell,
+.arrow-down,
+.link-hover,
+a,
+img {
+    cursor: pointer;
 }
 
 .media-links {
@@ -398,7 +407,7 @@ li {
 }
 
 .contact-header-cont {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .submit-button {
@@ -406,6 +415,8 @@ li {
     font-size: 130%;
     text-align: left;
     color: var(--background);
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .others-links {

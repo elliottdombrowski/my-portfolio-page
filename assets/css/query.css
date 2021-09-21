@@ -1,6 +1,41 @@
-@media all and (max-width: 770px) {
-    h1 {
+@media all and (min-width: 1025px) {
+    .about-bio-header-wrapper {
+        height: 125px;
+    }
+
+    .about-bio-header-wrapper-right {
+        height: 120px;
+    }
+
+    .about-bio-header {
+        font-size: 300%;
+    }
+
+    .about-bio-header-right {
         font-size: 250%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .about-bio-wrapper {
+        bottom: 37%;
+        left: 5%;
+        height: 35%;
+        width: 85%;
+    }
+
+    .about-bio-wrapper-right {
+        bottom: 2%;
+        right: 5%;
+        left: auto;
+        height: 32%;
+        width: 85%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 300%;
         text-align: center;
     }
 
@@ -34,8 +69,6 @@
         flex-direction: column;
         width: 50%;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -178,9 +211,64 @@
     }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 450px) {
+    h1 {
+        font-size: 250%;
+    }
+
     .nav-bar-links {
         font-size: 1.2rem;
+    }
+
+    .nav-item {
+        padding: 0;
+    }
+
+    .nav-menu {
+        top: 4rem;
+    }
+
+    .about-header-container {
+        height: 150px;
+    }
+
+    .about-me-header {
+        font-size: 165%;
+    }
+
+    .work-wrapper {
+        padding-bottom: 0;
+    }
+
+    .work-container {
+        margin: 15px 0;
+    }
+
+    .work-mobile-header {
+        width: 68%;
+        font-size: 92%;
+    }
+
+    .form-wrapper {
+        justify-content: end;
+        padding-bottom: 50px;
+    }
+
+    .contact-info-container {
+        margin-top: var(--margin);
+        width: 83%;
+    }
+
+    .contact-header {
+        font-size: 140%;
+    }
+
+    .contact-header-cont {
+        margin-top: var(--margin);
+    }
+
+    .others-links {
+        margin-top: 0;
     }
 }
 
@@ -280,3 +368,25 @@
 
     
 }
+
+/* @media all and (max-height: 823px) {
+    .form-wrapper {
+        justify-content: center;
+    }
+
+    .contact-header-cont,
+    .contact-info-container {
+        margin-top: 60px;
+    }
+}
+
+@media all and (max-height: 800px) {
+    .form-wrapper {
+        justify-content: end;
+    }
+
+    .contact-header-cont,
+    .contact-info-container {
+        margin-top: var(--margin);
+    }
+} */
