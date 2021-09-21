@@ -137,7 +137,6 @@
 
     .work-wrapper {
         justify-content: end;
-        padding-bottom: 15%;
     }
 
     .work-mobile-header {
@@ -157,17 +156,22 @@
         margin: 0;
     }
 
+    .work-wrapper-mobile {
+        text-align: center;
+    }
+
     .main-work {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90vw;
+        width: 75vw;
+        margin-top: 25%;
     }
 
     .work-container {
-        margin: var(--margin) 0;
-        width: 80vw;
+        margin-top: 15px;
+        width: 70vw;
     }
 
     .form-wrapper-inner {
@@ -268,7 +272,58 @@
     }
 
     .others-links {
+        text-align: center;
         margin-top: 0;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .about-header-container {
+        width: 70%;
+    }
+
+    .about-down-display {
+        right: auto;
+        left: 110%;
+    }
+
+    .about-bio-header {
+        font-size: 115%;
+    }
+
+    .main-work {
+        margin-top: 30%;
+    }
+
+    .work-container {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .work-mobile-header {
+        top: 12%;
+        font-size: 70%;
+    }
+
+    .form-wrapper {
+        padding-bottom: 25px;
+    }
+
+    .form-wrapper-inner {
+        width: 250px;
+    }
+
+    .contact-info-container {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .contact-info-list {
+        font-size: 100%;
+    }
+
+    .contact-header-cont {
+        margin-top: 10px;
     }
 }
 

@@ -89,7 +89,7 @@ $(document).ready(() => {
 //Downsize media icons for small screens
 function navbarQuery(small) {
   var navQuery = $(".query-listener");
-
+  
   if (small.matches) {
     navQuery.removeClass("fa-2x");
     navQuery.addClass("fa-lg");
@@ -99,21 +99,7 @@ function navbarQuery(small) {
   }
 }
 
-// function aboutQuery(tiny) {
-//   var aboutQuery = $(".about-query-listener");
-
-//   if (tiny.matches) {
-//     aboutQuery.removeClass("fa-3x");
-//     aboutQuery.addClass("fa-2x");
-//     console.log("query matches");
-//   } else if (small.matches) {
-//     aboutQuery.removeClass("fa-2x");
-//     aboutQuery.addClass("fa-3x");
-//   }
-// }
-
 //Media Query Listener
-var tiny = window.matchMedia("(max-width: 290px)");
 var small = window.matchMedia("(max-width: 360px)");
 var medium = window.matchMedia("(max-width: 800px)");
 navbarQuery(small);

@@ -458,3 +458,8 @@ img {
 .cont-4 {
     animation-delay: 2500ms;
 }
+
+.repo-link {
+    font-family: var(--font);
+    text-align: center;
+}
