@@ -242,6 +242,13 @@ img {
     background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(12,24,48,1) 90%);
 }
 
+.about-text {
+    font-family: var(--font);
+    font-size: 225%;
+    padding: 0 10%;
+    color: black;
+}
+
 .about-header-container {
     position: relative;
     display: flex;
@@ -304,6 +311,9 @@ img {
 }
 
 .about-bio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
