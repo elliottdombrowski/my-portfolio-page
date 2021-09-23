@@ -12,8 +12,9 @@ If the user clicks the bell icon, they will be presented with a selection of soc
 https://elliottdombrowski.github.io/my-portfolio-page/
 
 ## Screenshots
-![Screenshot](assets\imgs\screenshot22.png)
-![Screenshot](assets\imgs\screenshot1.png)
+![Screenshot](./assets/imgs/screenshot22.png)
+![Screenshot](./assets/imgs/screenshot1.png)
+
 
 ## Future Developments
 Future Developments include plans to clean up mobile responsiveness to make the design more uniform across varying screen sizes, as well as a "what i'm listening to" feature leveraging the Spotify API.
