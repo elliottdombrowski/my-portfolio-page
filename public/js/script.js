@@ -106,3 +106,50 @@ navbarQuery(small);
 // tiny.addListener(aboutQuery);
 small.addListener(navbarQuery);
 medium.addListener(navbarQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// IF I EVER FORGET TO REMOVE THIS, I WROTE THIS AS A JOKE AND FORGOT TO REMOVE IT
+
+
+// let elliottWantBigGulp;
+// let hannahWantBigGulp;
+
+// function wantBigGulp() {
+//   elliottWantBigGulp = true;
+//   hannahWantBigGulp = true;
+
+//   if (elliottWantBigGulp && hannahWantBigGulp === true) {
+//     console.log("elliott wants a big gulp too");
+//     goToStore()
+//   } else {
+//     console.log("don't go to 7-11.");
+//   }
+// }
+
+// function goToStore() {
+//   console.log("go to 7-11")
+// }
+
+// wantBigGulp()
