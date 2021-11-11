@@ -1,6 +1,9 @@
-const path = requir('path');
+//REQUIRE EXPRESS PACKAGE
+const path = require('path');
 const express = require('express');
-const session = require('express-session');
+
+//FOR FUTURE DEVELOPMENTS...
+// const session = require('express-session');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -19,4 +22,10 @@ const PORT = process.env.PORT || 3001;
 
 // app.use(session(sess));
 
-app.listen(PORT, () => console.log(`Now listening on pot ${PORT}`));
+app.use(express.static('public'));
+
+app.get('/', (req, res) => 
+    res.sendFile(path.join(__dirname, '/public/html/index.html'))
+);
+
+app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
