@@ -409,6 +409,7 @@ img {
     margin-top: 5px;
 }
 
+
 .contact-header,
 .contact-label {
     font-family: var(--font);
@@ -427,6 +428,11 @@ img {
     color: var(--background);
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.submit-input__textarea {
+    height: 10rem;
+    resize: none;
 }
 
 .others-links {
