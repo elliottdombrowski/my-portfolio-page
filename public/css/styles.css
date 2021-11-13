@@ -438,6 +438,7 @@ img {
 
 .submit-input__textarea {
     height: 10rem;
+    padding-top: 0.5rem;
     resize: none;
 }
 
