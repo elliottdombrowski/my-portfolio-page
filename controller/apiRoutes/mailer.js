@@ -13,6 +13,7 @@ const transporter = nodemailer.createTransport(
 );
 
 router.post('/send', (req, res) => {
+    console.log('Route working');
     transporter.sendMail(req.body, function (err, info) {
         if(err) {
             res.json(err);

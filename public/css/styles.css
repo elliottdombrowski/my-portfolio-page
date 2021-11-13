@@ -417,6 +417,12 @@ img {
     margin-top: 10px;
 }
 
+.res-msg {
+    height: 19px;
+    text-align: center;
+    font-size: 120%;
+}
+
 .contact-header-cont {
     margin-top: 80px;
 }

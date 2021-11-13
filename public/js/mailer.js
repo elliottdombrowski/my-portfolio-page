@@ -3,6 +3,7 @@ const formName = document.getElementById('user-name').value.trim();
 const formText = document.getElementById('form-text').value.trim();
 
 document.getElementById('form-submit-button').addEventListener('click', function () {
+    console.log('button click working');
     const options = {
         from: `${email}`,
         to: 'elliottdombrowski@gmail.com',
