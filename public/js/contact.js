@@ -1,7 +1,10 @@
 const alertMsg = document.getElementById('response-msg'); 
 
 //PROB CAN REFACTOR THIS TO USE FOR LOOP LATER
-document.getElementById('form-submit-button').addEventListener('click', function () {
+const validateContactForm = async (event) => {
+    //PREVENT FORMS FROM CLEARING ON SUBMIT
+    event.preventDefault();
+    
     //GET VALUES FROM CONTACT FORM
     const valName = document.getElementById('user-name').value.trim();
     const valEmail = document.getElementById('email').value.trim();
@@ -14,4 +17,8 @@ document.getElementById('form-submit-button').addEventListener('click', function
     } else {
         alertMsg.innerHTML = 'thanks'
     };
-});
+}
+
+document
+    .querySelector('#form-submit-button')
+    .addEventListener('click', validateContactForm)
