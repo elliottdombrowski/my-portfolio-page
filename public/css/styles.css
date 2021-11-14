@@ -409,22 +409,26 @@ img {
     margin-top: 5px;
 }
 
+.submit-input {
+    height: 2.6rem;
+}
 
 .contact-header,
 .contact-label {
     font-family: var(--font);
     font-size: 180%;
+    margin: 0;
     margin-top: 10px;
+}
+
+.contact-header-cont {
+    font-size: 130%;
 }
 
 .res-msg {
     height: 19px;
     text-align: center;
     font-size: 120%;
-}
-
-.contact-header-cont {
-    margin-top: 80px;
 }
 
 .submit-button {
@@ -443,12 +447,14 @@ img {
 }
 
 .others-links {
-    margin-top: 30px;
-    padding: 20px 40px;
+    margin-top: 0.6rem;
+    padding: 0.6rem 1rem;
     border: 1px solid white;
 }
 
 .contributors {
+    font-size: 120%;
+
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
