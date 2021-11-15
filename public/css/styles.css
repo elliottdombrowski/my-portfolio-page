@@ -327,31 +327,51 @@ img {
     left: auto;
 }
 
+.proj-header {
+    padding: 0.5rem 0 0;
+    font-size: 300%;
+}
+
+.proj-tech {
+    font-family: var(--font);
+}
+
 .work-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
+    padding-top: 12%;
 }
 
 .work-header {
     font-family: var(--font);
-    font-size: 130%;
-    text-align: center;
+    font-size: 200%;
 }
 
 .full-stack,
 .front-end,
 .back-end {
-    width: 30%;
-    height: 55%;
+    width: 80%;
+    height: 60%;
 }
 
 .work-img {
     width: 100%;
     border: 1px solid white;
+}
+
+.div-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 2px;
+}
+
+.divider {
+    width: 100%;
+    background: white;
 }
 
 .form-wrapper {
@@ -441,12 +461,6 @@ img {
 .contact-info {
     display: block;
     margin: 3px 0;
-}
-
-.divider {
-    background: white;
-    width: 2px;
-    height: 100%;
 }
 
 .cont-1 {
