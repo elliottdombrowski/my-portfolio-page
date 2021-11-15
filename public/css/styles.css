@@ -226,9 +226,9 @@ img {
     opacity: 0;
 }
 
-.work,
 .contact,
-.about {
+.about,
+.work {
     display: none;
     height: 100vh;
     width: 100vw;
@@ -267,7 +267,7 @@ img {
     height: 50%;
     width: 43%;
     background: transparent;
-
+    
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -329,52 +329,29 @@ img {
 
 .work-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
-.carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80%;
-    width: 80%;
-    margin-top: 40px;
-}
-
-.carousel-indicators {
-    position: static;
-    background: var(--background);
-    border-radius: 50px;
-    width: 200px;
-}
-
-.carousel-item {
-    position: relative;
-}
-
-.carousel-text {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    bottom: 30px;
-    right: 0;
-    width: 350px;
-    padding: 5px 10px;
+.work-header {
     font-family: var(--font);
     font-size: 130%;
     text-align: center;
-    line-height: 1.2;
-    border-radius: 20px 0 0 20px;
-    background: rgba(0, 0, 0, 0.774);
 }
 
-.work-mobile,
-.work-mobile-header {
-    display: none;
+.full-stack,
+.front-end,
+.back-end {
+    width: 30%;
+    height: 55%;
+}
+
+.work-img {
+    width: 100%;
+    border: 1px solid white;
 }
 
 .form-wrapper {
