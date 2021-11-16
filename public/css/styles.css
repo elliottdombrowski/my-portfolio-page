@@ -80,6 +80,7 @@ li {
     align-content: center;
     height: 75px;
     width: 100vw;
+    max-width: 100%;
     z-index: 2;
 
     animation: fadeInAnimation ease 3s;
