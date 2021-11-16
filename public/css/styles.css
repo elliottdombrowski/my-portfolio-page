@@ -347,12 +347,13 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 12%;
+    padding-top: 10%;
 }
 
 .work-header {
     font-family: var(--font);
     font-size: 200%;
+    margin-top: 2rem;
 }
 
 .full-stack,
@@ -383,6 +384,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .work-info-list {
