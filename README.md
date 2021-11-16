@@ -12,8 +12,8 @@ If the user clicks the bell icon, they will be presented with a selection of soc
 https://elliottdombrowski.github.io/my-portfolio-page/
 
 ## Screenshots
-![Screenshot](./assets/imgs/screenshot22.png)
-![Screenshot](./assets/imgs/screenshot1.png)
+![Screenshot](./public/imgs/screenshot22.png)
+![Screenshot](./public/imgs/screenshot1.png)
 
 
 ## Future Developments

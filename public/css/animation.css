@@ -6,6 +6,7 @@
 .link-hover:hover,
 .link-hover:active {
     color: var(--fade-two);
+    cursor: pointer;
 }
 
 .link-hover:active {
