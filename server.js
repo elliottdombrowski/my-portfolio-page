@@ -22,8 +22,6 @@ const PORT = process.env.PORT || 3001;
 //     })
 // };
 
-// app.use(session(sess));
-
 app.use(express.static('public'));
 
 app.get('/', (req, res) => 
