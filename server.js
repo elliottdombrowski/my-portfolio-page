@@ -7,6 +7,8 @@ const express = require('express');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+//READDING PORT JUST TO HAVE SOMETHING TO CHANGE I GUESS
+//TRYING TO DEPLOY TO HEROKU
 
 //BOILERPLATE STARTER STUFF IF I EVER DECIDE TO IMPLEMENT A DATABASE.
 // oneHr = 1000 * 60 * 60 * 1;
